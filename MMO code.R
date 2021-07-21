@@ -16,7 +16,7 @@ mydata='D:MMO'      # giving folder link
 setwd(mydata)    # setting working directory
 
 
-mydata = as.matrix(read.csv2(file='alldata.csv',sep = ',',header = TRUE)) # reading it as matrix
+mydata = as.matrix(read.csv2(file='MMO code sample data.csv',sep = ',',header = TRUE)) # reading it as matrix
 mydata = apply(mydata,2, as.numeric) # converting it to numeric
 nn=494 # no. of basins 
 
