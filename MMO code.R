@@ -46,6 +46,7 @@ for(mm in 1:6){
     }
     rm(j, k,sx,sy)
   }
+  r[is.nan(r)] = 0
   rr <- as.vector(r)
   rr <- na.omit(rr)
   fina_matrix[,mm]=rr 
