@@ -46,7 +46,7 @@ for(mm in 1:6){
     }
     rm(j, k,sx,sy)
   }
-  r[is.nan(r)] = 0
+  r[is.nan(r)] = 0 # if two basin has zero value then canbera distance will be NAN, so replace it by zero
   rr <- as.vector(r)
   rr <- na.omit(rr)
   fina_matrix[,mm]=rr 
